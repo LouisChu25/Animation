@@ -79,7 +79,12 @@ body {
         .scroll{
             right: -215px;
         } */
-        
+
+marquee{
+    width:100%;
+    font-size:64px;
+    font-weight:bold;
+}    
 
   @keyframes mouvement {
       from{
