@@ -1,0 +1,66 @@
+body {
+    padding: 50px; 
+  }
+
+  .separate {
+    height: 100px;
+    width: 100%;
+}
+
+.spinning {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+  }
+
+  @keyframes spin {
+      from {
+          transform:rotate(0deg);
+      }
+      to {
+          transform:rotate(360deg);
+      }
+  }
+
+  .cercle
+  {
+      width: 100px;
+      padding: 50px 0;
+      line-height: 0;
+      background-color: black;
+      color: white;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: 1s;
+  }
+
+
+  .cercle:hover {
+    background-color: #C3A995;
+    transform: rotate(360deg);
+  }
+
+
+  .objet
+  {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    animation-name: mouvement;
+    animation-duration: 3s;
+  }
+
+  @keyframes mouvement {
+      from{
+          transform: translateX(0);
+      }
+      to{
+          transform: translateX(1000px);
+      }
+  }
+  
